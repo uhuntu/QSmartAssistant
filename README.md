@@ -42,6 +42,7 @@ cd scripts
 ./install_onnxruntime.sh
 ./install_rasa.sh
 ./install_neteasejs.sh
+cd ..
 cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DWAKEUP_DUILITE=OFF -DVAD_DUILITE=OFF -DWAKEUP_SNOWBOY=ON -DVAD_SILERO=ON -DNETEASE_USE_JS=ON -B build/
 # config.json中的配置需要按需进行更改
 ```

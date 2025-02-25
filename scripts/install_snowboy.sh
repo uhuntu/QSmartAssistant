@@ -11,12 +11,13 @@ pushd swig-3.0.10
         --without-clisp                    \
         --without-maximum-compile-warnings &&
 make -j `nproc`
-make install &&
-install -v -m755 -d /usr/share/doc/swig-3.0.10 &&
-cp -v -R Doc/* /usr/share/doc/swig-3.0.10
+sudo make install &&
+sudo install -v -m755 -d /usr/share/doc/swig-3.0.10 &&
+sudo cp -v -R Doc/* /usr/share/doc/swig-3.0.10
 popd
 rm -rf swig-3.0.10 swig-3.0.10.tar.gz
-sudo apt-get install libatlas-base-dev
+
+#sudo apt-get install libatlas-base-dev
 
 git clone https://github.com/Kitt-AI/snowboy.git
 mkdir -p ${lib_path}

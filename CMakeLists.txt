@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.14)
 project(QSmartAssistant VERSION 1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_PREFIX_PATH "/home/hunt/Qt/5.15.2/gcc_64/lib/cmake")
 
 # Set up AUTOMOC and some sensible defaults for runtime execution
 # When using Qt 6.3, you can replace the code block below with
@@ -9,7 +10,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 include(GNUInstallDirs)
 
-find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
+find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Multimedia Network)
 
 file(GLOB COMMON_SOURCES Utils/*.cpp Recorder/*.cpp)
