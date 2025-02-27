@@ -38,6 +38,7 @@ cp Data/plugin_order_default.txt Data/plugin_order.txt
 
 cd scripts
 ./install_snowboy.sh
+./install_openssl.sh
 ./install_sherpa_onnx.sh
 ./install_onnxruntime.sh
 ./install_rasa.sh

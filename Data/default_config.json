@@ -54,20 +54,33 @@
 		"tokens": "sherpa-onnx-paraformer-zh-2024-03-09/tokens.txt",
 		"stream": false
 	},
-	"sherpa_tts":{
+	// "sherpa_tts":{
+	// 	"model": "vits-zh-aishell3/vits-aishell3.int8.onnx",
+	// 	"lexicon": "vits-zh-aishell3/lexicon.txt",
+	// 	"tokens": "vits-zh-aishell3/tokens.txt",
+	// 	"rules": "vits-zh-aishell3/rule.fst",
+	// 	"vocoder": "hifigan_v2.onnx",
+	// 	"length": 1,
+	// 	"noise-w": 0.2,
+	// 	"noise": 0.3,
+	// 	"speakerid": 66,
+	// 	"extra_volume": 0,
+	// 	"speed": 1.0,
+	// 	"dict": "matcha-icefall-zh-baker/dict",
+	// 	"data_dir": ""
+	// },
+	"sherpa_tts": {
 		"model": "vits-zh-aishell3/vits-aishell3.int8.onnx",
 		"lexicon": "vits-zh-aishell3/lexicon.txt",
 		"tokens": "vits-zh-aishell3/tokens.txt",
 		"rules": "vits-zh-aishell3/rule.fst",
-		"data_dir": "",
-		"vocoder": "hifigan_v2.onnx",
-		"dict": "matcha-icefall-zh-baker/dict",
-		"noise": 0.3,
-		"noise-w": 0.2,
+		"vocoder": "hifigan_v3.onnx",
 		"length": 1,
+		"noise-w": 0.3,
+		"noise": 0.2,
 		"speakerid": 66,
-		"speed": 1.0,
-		"extra_volume": 0
+		"extra_volume": 20,
+		"speed": 1
 	},
     "sherpa_wakeup": {
         "model": "sherpa-kws/%1-epoch-12-avg-2-chunk-16-left-64.int8.onnx",

@@ -70,7 +70,9 @@ if(WAKEUP_SNOWBOY)
         Wakeup/snowboywakeup.cpp Wakeup/snowboywakeup.h
         Wakeup/snowboywrapper.cpp Wakeup/snowboywrapper.h
     )
+    # set(CMAKE_FIND_DEBUG_MODE TRUE)
     add_custom_lib(snowboy)
+    # set(CMAKE_FIND_DEBUG_MODE FALSE)
 endif()
 
 if(WAKEUP_WEKWS)

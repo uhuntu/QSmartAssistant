@@ -73,6 +73,9 @@ jobs:
         wget https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-2024-03-09.tar.bz2
         tar xvf sherpa-onnx-paraformer-zh-2024-03-09.tar.bz2
         rm sherpa-onnx-paraformer-zh-2024-03-09.tar.bz2
+        wget https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-icefall-zh-baker.tar.bz2
+        tar xvf matcha-icefall-zh-baker.tar.bz2
+        rm matcha-icefall-zh-baker.tar.bz2
         cp default_config.json config.json
         cp plugin_order_default.txt plugin_order.txt
     - name: build
